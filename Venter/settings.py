@@ -32,7 +32,7 @@ SECRET_KEY = 'p!63vi=_4)o5h8k0ep4uy2e6ou^k$9wels#e&&x=^^!=$xa21o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://venterrr.azurewebsites.net/']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -133,7 +133,7 @@ STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 #STATIC_URL = 'https://storage.googleapis.com/venterms/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "CategoryPrediction/../Login/static"),
+    os.path.join(BASE_DIR, "/Login/static"),
 ]
 
 LOGIN_REDIRECT_URL = 'home'
